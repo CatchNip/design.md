@@ -66,7 +66,7 @@ npx @google/design.md lint DESIGN.md
       "message": "textColor (#ffffff) on backgroundColor (#1A1C1E) has contrast ratio 15.42:1 — passes WCAG AA."
     }
   ],
-  "summary": { "errors": 0, "warnings": 1, "info": 1 }
+  "summary": { "errors": 0, "warnings": 1, "infos": 1 }
 }
 ```
 
@@ -80,7 +80,15 @@ npx @google/design.md diff DESIGN.md DESIGN-v2.md
 {
   "tokens": {
     "colors": { "added": ["accent"], "removed": [], "modified": ["tertiary"] },
-    "typography": { "added": [], "removed": [], "modified": [] }
+    "typography": { "added": [], "removed": [], "modified": [] },
+    "rounded": { "added": [], "removed": [], "modified": [] },
+    "spacing": { "added": [], "removed": [], "modified": [] },
+    "components": { "added": [], "removed": [], "modified": [] }
+  },
+  "findings": {
+    "before": { "errors": 0, "warnings": 1, "infos": 1 },
+    "after": { "errors": 0, "warnings": 1, "infos": 1 },
+    "delta": { "errors": 0, "warnings": 0 }
   },
   "regression": false
 }
