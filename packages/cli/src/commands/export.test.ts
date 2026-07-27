@@ -23,7 +23,7 @@ describe('export command', () => {
   let errorSpy: any;
 
   beforeEach(() => {
-    process.exitCode = undefined;
+    process.exitCode = 0;
     logSpy = spyOn(console, 'log').mockImplementation(() => {});
     errorSpy = spyOn(console, 'error').mockImplementation(() => {});
   });
